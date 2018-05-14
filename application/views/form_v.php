@@ -4,19 +4,22 @@
 	<title></title>
 </head>
 <body>
-	<form action="http://localhost/tiket_ku/index.php/user/add/" method="POST">
-	Username <br>
-	<input name="username" value=""><br>
-	Password <br>
-	<input name="password" type="password" value=""><br>
-	Fullname <br>
-	<input name="fullname" value=""><br>
-	Level <br>
-	<select name="level">
-		<option value="admin">Admin</option>
-		<option value="user">User</option>
-	</select><br>
-	<input type="submit" value="simpan" />
-</form>
+	<form method="POST" action="<?php echo base_url()."index.php/user/do_insert"; ?>">
+	<tabel>
+		<tr>
+		ID <br>
+		<input name="id" value=""><br>
+		Username <br>
+		<input name="username" value=""><br>
+		Password <br>
+		<input name="password" type="password" value=""><br>
+		Fullname <br>
+		<input name="fullname" value=""><br>
+		Level <br>
+		<input name="level" value=""><br>
+		<br>
+		<input type="submit" name="btnsubmit" value="simpan"/>
+		</tabel>
+		</form>
 </body>
 </html>
